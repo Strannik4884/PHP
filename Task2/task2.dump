@@ -1,0 +1,86 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: person; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE person (
+    id integer NOT NULL,
+    uri character varying(500) NOT NULL,
+    public_access character varying(50),
+    profile_state character varying(50),
+    first_name character varying(200) NOT NULL,
+    second_name character varying(200) NOT NULL,
+    created_date date,
+    last_logged_in_date date,
+    modified_date date
+);
+
+
+ALTER TABLE public.person OWNER TO postgres;
+
+--
+-- Data for Name: person; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY person (id, uri, public_access, profile_state, first_name, second_name, created_date, last_logged_in_date, modified_date) FROM stdin;
+\.
+
+
+--
+-- Name: pk_person; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY person
+    ADD CONSTRAINT pk_person PRIMARY KEY (id);
+
+
+--
+-- Name: person_pk; Type: INDEX; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE UNIQUE INDEX person_pk ON person USING btree (id);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- PostgreSQL database dump complete
+--
+
