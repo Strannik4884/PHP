@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+<RDF>
+  <Person>
+    <publicAccess>disallowed</publicAccess>
+    <profileState>active</profileState>
+    <URI primary="yes" resource="http://vk.com/id152191562"/>
+    <URI resource="http://vk.com/alex_parkhomov"/>
+    <firstName>Александр</firstName>
+    <secondName>Пархомов</secondName>
+    <name>Александр Пархомов</name>
+    <created date="2011-10-27T16:20:47+03:00"/>
+    <lastLoggedIn date="2020-04-18T23:14:16+03:00"/>
+    <modified date="2017-10-10T22:16:23+03:00"/>
+  </Person>
+  <Person>
+    <publicAccess>disallowed</publicAccess>
+    <profileState>active</profileState>
+    <URI primary="yes" resource="http://vk.com/id268352795"/>
+    <firstName>Ясмина</firstName>
+    <secondName>Витковски</secondName>
+    <name>Ясмина Витковски</name>
+    <created date="2014-09-07T17:48:58+03:00"/>
+    <lastLoggedIn date="2020-04-18T23:15:38+03:00"/>
+    <modified date="2019-09-24T21:43:15+03:00"/>
+  </Person>
+  <Person>
+    <publicAccess>allowed</publicAccess>
+    <profileState>active</profileState>
+    <URI primary="yes" resource="http://vk.com/id91120138"/>
+    <URI resource="http://vk.com/sokolovalerie"/>
+    <firstName>Валерия</firstName>
+    <secondName>Соколова</secondName>
+    <name>Валерия Соколова</name>
+    <created date="2010-07-23T15:47:02+03:00"/>
+    <lastLoggedIn date="2020-04-18T23:02:14+03:00"/>
+    <modified date="2020-04-10T20:43:58+03:00"/>
+  </Person>
+  <Person>
+    <publicAccess>disallowed</publicAccess>
+    <profileState>active</profileState>
+    <URI primary="yes" resource="http://vk.com/id159470335"/>
+    <URI resource="http://vk.com/tanya_golovina18"/>
+    <firstName>Татьяна</firstName>
+    <secondName>Головина</secondName>
+    <name>Татьяна Головина</name>
+    <created date="2012-01-11T10:46:00+03:00"/>
+    <lastLoggedIn date="2020-04-18T23:16:56+03:00"/>
+  </Person>
+  <Person>
+    <publicAccess>disallowed</publicAccess>
+    <profileState>active</profileState>
+    <URI primary="yes" resource="http://vk.com/id89472326"/>
+    <URI resource="http://vk.com/a4811337"/>
+    <firstName>Артём</firstName>
+    <secondName>Сухоруких</secondName>
+    <name>Артём Сухоруких</name>
+    <created date="2010-07-07T19:25:53+03:00"/>
+    <lastLoggedIn date="2020-04-18T23:09:21+03:00"/>
+    <modified date="2019-04-18T15:27:20+03:00"/>
+  </Person>
+</RDF>
