@@ -1,0 +1,22 @@
+/* main site styles */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main > .container,
+main > .container > .section {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
