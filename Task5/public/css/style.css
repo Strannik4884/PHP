@@ -1,0 +1,97 @@
+/* body style */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../images/background.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* main style */
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 auto;
+}
+
+/* container and section style */
+main > .container,
+main > .container > .section {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+/* logo font style */
+.logo-text{
+    font-size: 40px;
+}
+
+/* nav font style */
+.nav-text{
+    font-size: 25px;
+}
+
+/* about section font style */
+.about-text{
+    color: white;
+    font-size: 25px;
+}
+
+/* input field focus style */
+.row .input-field input:focus {
+    border-bottom: 1px solid #1e88e5 !important;
+    box-shadow: 0 1px 0 0 #1e88e5 !important
+}
+
+/* textarea focus style */
+textarea:focus {
+    border-bottom: 1px solid #1e88e5 !important;
+    box-shadow: 0 1px 0 0 #1e88e5 !important
+}
+
+/* error block style */
+.input-field div.error{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    color: red;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+/* error label style */
+.input-field label.active{
+    width:100%;
+}
+
+/* left alert style */
+.left-alert input[type=text] + label:after,
+.left-alert input[type=email] + label:after,
+.left-alert textarea.materialize-textarea + label:after{
+    left: 0;
+}
+
+/* textarea character counter style */
+.character-counter{
+    color: white;
+}
+
+/* copyright font style */
+.copyright-text{
+    color: white;
+    font-family: MazzardM-Light, sans-serif;
+    font-size: 20px;
+}
+
+/* copyright link style */
+.footer-link {
+    color: white;
+    text-decoration: underline;
+}
