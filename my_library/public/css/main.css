@@ -1,0 +1,93 @@
+/* main site styles */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main > .container,
+main > .container > .section {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+/* nav-container style */
+.nav-container{
+    max-width: none;
+    width: 85%;
+}
+
+/* main-container style */
+.main-container{
+    max-width: none;
+    width: 100%;
+}
+
+/* form-section style */
+.form-section{
+    width: 100%;
+    min-height: 89.5vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* main-row table style */
+.main-row{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* right-box container style */
+.right-box{
+    width: 100%;
+    min-height: 89.5vh;
+    height: 1850px;
+    background: url("../images/right_box_background.jpg");
+    background-size: cover;
+}
+
+/* logo font-size */
+.logo-text{
+    color: black;
+    font-size: 35px;
+}
+
+/* nav font-size */
+.nav-text{
+    color: black;
+    font-size: 20px;
+}
+
+/* books list font-size */
+.book_text{
+    font-size: 20px;
+}
+
+/* footer container style */
+.footer-copyright{
+    min-height: 40px;
+    height: 40px;
+}
+
+/* footer copyright style */
+.copyright-text{
+    color: white;
+    font-family: MazzardM-Light, sans-serif;
+    font-size: 20px;
+}
+
+/* footer copyright links style */
+.footer-link {
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Авторизация{% endblock %}
+
+{% block stylesheets %}<link type="text/css" rel="stylesheet" href="{{ asset('css/form.css') }}"/>{% endblock %}
+
+{% block content %}
+    <!-- Login form -->
+    <div class="section form-section">
+        <div class="valign-wrapper" style="flex: 1;">
+            <div class="container valign" style="max-width: 500px;">
+                <form action="#" method="post" accept-charset="utf-8" class="col s12">
+                    {% if error %}
+                        <div class="materialert error" id="message-box">
+                            <div class="material-icons">error_outline</div>
+                            {{ error.messageKey|trans(error.messageData, 'security') }}
+                            <button type="button" class="close-alert" id="message-close">×</button>
+                        </div>
+                    {% endif %}
+                    <div style="display:none;">
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <h5>Авторизация</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="validate" required="required" maxlength="255" id="email" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="password">Пароль</label>
+                            <input type="password" name="password" class="validate" required="required" maxlength="255" id="password" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light" style="float: right;" type="submit">Войти<i class="material-icons right">send</i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
